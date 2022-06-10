@@ -1,0 +1,56 @@
+* {
+    font-family: 'Segoe UI', 
+    Tahoma, 
+    Geneva, 
+    Verdana, 
+    sans-serif;
+}
+
+div:hover {
+    border: 1px solid black;
+}
+
+/* Qualquer filho de <body> recebe um hover. */
+:nth-child(3):hover  {
+    background-color: red;
+}
+
+:nth-child(4):hover  {
+    background-color: blue;
+}
+
+:nth-child(5):hover  {
+    background-color: orange;
+    height: 80px;
+}
+
+:nth-child(6):hover  {
+    background-color: black;
+}
+
+:nth-child(7):hover  {
+    background-color: goldenrod;
+}
+
+/* Qualquer container filho de <body> que possuí um filho <h3> recebe um hover*/
+:nth-child(3):hover h3 {
+    color: white;
+    font-style: italic;
+}
+
+:nth-child(4):hover h3 {
+    color: white;
+}
+
+:nth-child(5):hover h3 {
+    color: white;
+}
+
+:nth-child(6):hover h3 {
+    color: white;
+}
+
+:nth-child(7):hover h3 {
+    color: white;
+    font-style: italic;
+}
