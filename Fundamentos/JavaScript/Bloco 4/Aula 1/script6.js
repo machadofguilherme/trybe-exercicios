@@ -1,4 +1,4 @@
-let pessoaAprovada = 2;
+let pessoaAprovada = 'aprovada';
 
 switch (pessoaAprovada) {
     case 'aprovada':
