@@ -2,24 +2,21 @@
 // Array de teste: [2, 3, 2, 5, 8, 2, 3];.
 // Valor esperado no retorno da função: 2.
 
-let fewArray = [2, 3, 2, 5, 8, 2, 3];
+let numbersArray = [2, 3, 2, 5, 8, 2, 3];
+let count = 0;
+let result;
 
-let c = null;
-let x = null;
+function moreRepeat(array) {
+    numbersArray.sort();
 
-function repeatNumber(array) {
-    
     for (let index = 0; index < array.length; index += 1) {
-        x += array[index];
-            
-        if (x == array[index]) {
-                c += x;
-            }
-
+        if (array[index] === array[index + 1]) {
+            count += 1;
+            result = numbersArray.find( element => element * count );
+        }
     }
-    
-    console.log(c);
 
+    console.log(result);
 }
 
-repeatNumber(fewArray);
+moreRepeat(numbersArray);
