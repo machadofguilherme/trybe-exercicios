@@ -28,6 +28,7 @@ createDaysOfTheWeek();
 // O array decemberDaysList contém os dois últimos dias de novembro e os dias do mês de dezembro. Sua função deve criar dinamicamente cada dia do calendário e os adicionar dentro da tag <ul>.
 
 let numbersWeek = document.querySelector('#days');
+let newDays;
 let decemberDaysList = [
   29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 
   12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 
@@ -36,7 +37,26 @@ let decemberDaysList = [
 
 window.onload = () => {
     for (let index = 0; index < decemberDaysList.length; index += 1) {
-        let newDays = document.createElement('li');
+        newDays = document.createElement('li');
+        newDays.classList.add('day');
+
+        if 
+        (
+            decemberDaysList[index] === 31 || 
+            decemberDaysList[index] === 24 || 
+            decemberDaysList[index] === 25
+        ) { 
+            newDays.classList.add('holiday');
+        }
+        if 
+        (   decemberDaysList[index] === 4  ||
+            decemberDaysList[index] === 11 || 
+            decemberDaysList[index] === 18 ||
+            decemberDaysList[index] === 25
+        ) { 
+            newDays.classList.add('friday');
+        }
+
         newDays.innerText = decemberDaysList[index];
         numbersWeek.appendChild(newDays);
     }
