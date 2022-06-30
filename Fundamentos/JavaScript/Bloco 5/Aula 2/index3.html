@@ -106,6 +106,14 @@
             moreSection.appendChild(list);
         }
 
+        // 🚀 Adicione 3 tags h3, todas sendo filhas do main criado no passo 2.
+        let hTag = document.createElement('h3');
+        for (let newIndex = 1; newIndex < mainTag.length; newIndex += 1) {
+            hTag.innerText = 'Uma frase qualquer.';
+            mainTag.children.appendChild(hTag);
+        }
+
+        console.log(mainTag.children);
     </script>
   </body>
 </html>
