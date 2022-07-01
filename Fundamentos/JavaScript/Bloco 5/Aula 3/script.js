@@ -58,6 +58,7 @@ window.onload = () => {
     newDays.innerText = decemberDaysList[index];
     numbersWeek.appendChild(newDays);
   }
+  createFridayBtn();
 };
 
 // 🚀 Exercício 2:
@@ -99,3 +100,15 @@ btn.addEventListener("click", () => {
     bgHoliday[2].style.backgroundColor = "lightgreen";
   }
 });
+
+// 🚀 Exercício 4:
+// Implemente uma função que crie dinamicamente um botão com o nome "Sexta-feira". Sua função deve receber como parâmetro a string "Sexta-feira".
+// Adicione a esse botão o ID "btn-friday";
+// Adicione esse botão como filho/filha da tag <div> com classe "buttons-container".
+
+function createFridayBtn() {
+  let fridayBtn = document.createElement('button');
+  fridayBtn.id = 'btn-friday';
+  fridayBtn.innerText = 'Sexta-feira';
+  btnContainer.appendChild(fridayBtn);
+}
