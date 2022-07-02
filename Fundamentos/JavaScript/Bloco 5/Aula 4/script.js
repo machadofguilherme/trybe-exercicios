@@ -13,25 +13,31 @@ darkMode.addEventListener("click", () => {
     borderLeft = mainStyle.style.borderLeftColor = "black";
     borderRight = mainStyle.style.borderRightColor = "black";
 
-    localStorage.setItem('background', black);
-    localStorage.setItem('color', textColor);
-    localStorage.setItem('borderL', borderLeft);
-    localStorage.setItem('borderR', borderRight);
+    localStorage.setItem("background", black);
+    localStorage.setItem("color", textColor);
+    localStorage.setItem("borderL", borderLeft);
+    localStorage.setItem("borderR", borderRight);
   } else {
-    let black = bodyPage.style.backgroundColor = "black";
-    let textColor = bodyPage.style.color = "white";
-    let borderLeft = mainStyle.style.borderLeftColor = "white";
-    let borderRight = mainStyle.style.borderRightColor = "white";
+    let black = (bodyPage.style.backgroundColor = "black");
+    let textColor = (bodyPage.style.color = "white");
+    let borderLeft = (mainStyle.style.borderLeftColor = "white");
+    let borderRight = (mainStyle.style.borderRightColor = "white");
 
-    localStorage.setItem('background', black);
-    localStorage.setItem('color', textColor);
-    localStorage.setItem('borderL', borderLeft);
-    localStorage.setItem('borderR', borderRight);
+    localStorage.setItem("background", black);
+    localStorage.setItem("color", textColor);
+    localStorage.setItem("borderL", borderLeft);
+    localStorage.setItem("borderR", borderRight);
   }
 });
 
 window.onload = () => {
-    for (let index = 0; index > localStorage.length; index += 1) {
-        localStorage.getItem(localStorage[index]);
-    }
-}
+  let bg = localStorage.getItem("background");
+  let colorRecover = localStorage.getItem("color");
+  let bL = localStorage.getItem("borderL");
+  let bR = localStorage.getItem("borderR");
+
+  bodyPage.style.backgroundColor = bg;
+  bodyPage.style.color = colorRecover;
+  mainStyle.style.borderLeftColor = bL;
+  mainStyle.style.borderRightColor = bR;
+};
