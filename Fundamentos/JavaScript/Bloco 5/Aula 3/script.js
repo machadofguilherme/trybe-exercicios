@@ -149,3 +149,25 @@ numbersWeek.addEventListener('mouseover', (e) => {
 numbersWeek.addEventListener('mouseout', (e) => {
   e.target.style.fontSize = '20px';
 });
+
+// 🚀 Exercício 7:
+// Implemente uma função que adicione uma tarefa personalizada ao calendário. A função deve receber como parâmetro a string com o nome da tarefa (ex: "cozinhar") e criar dinamicamente um elemento com a tag <span> contendo a tarefa.
+// O elemento criado deverá ser adicionado como filho/filha da tag <div> que possui a classe "my-tasks".
+
+const taskBtn = document.querySelector('#btn-add');
+const taskInput = document.querySelector('#task-input');
+const myTasks = document.querySelector('.my-tasks');
+let local = undefined;
+
+taskBtn.addEventListener('click', (e) => {
+  e.preventDefault();
+  let task = document.createElement('span');
+  if (task.length > 0) {
+    task.innerText += taskInput.value;
+  }
+  task.style.display = 'block';
+  task.innerText = taskInput.value;
+  local = localStorage.setItem('task', taskInput.value);
+  myTasks.appendChild(task);
+  taskInput.value = '';
+});
