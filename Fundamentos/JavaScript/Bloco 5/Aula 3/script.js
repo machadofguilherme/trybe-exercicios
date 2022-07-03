@@ -171,3 +171,18 @@ taskBtn.addEventListener('click', (e) => {
   myTasks.appendChild(task);
   taskInput.value = '';
 });
+
+// 🚀 Exercício 8:
+// Implemente uma função que adicione uma legenda com cor para a tarefa.
+// Copiar
+// * Essa função deverá receber como parâmetro uma string ('cor') e criar dinamicamente um elemento de tag `<div>` com a classe `task`.
+// O parâmetro cor deverá ser utilizado como cor de fundo da <div> criada.
+// O elemento criado deverá ser adicionado como filho/filha da tag <div> que possui a classe "my-tasks".
+
+taskBtn.addEventListener('click', (cor) => {
+  const divTask = document.createElement('div');
+  divTask.className = 'task';
+  cor = 'red';
+  divTask.style.backgroundColor = cor;
+  myTasks.appendChild(divTask);
+})
