@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: gray;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+
+main {
+    margin: 40px;
+}
+
+section {
+    padding-bottom: 10px;
+}
+
+#formulario-nome, #formulario-email {
+    width: 450px;
+    padding-right: 20px;
+}
+
+#formulario-nome label {
+    padding-right: 20px;
+}
+
+#formulario-email label {
+   padding-right: 10px;
+}
+
+
+.formulario-destino {
+    display: inline-block;
+    margin: 15px 0;
+    padding-right: 40px;
+}
+
+#formulario-nome input, #formulario-email input {
+    width: 80%;
+    border: 1px solid gray;
+    outline: none;
+    padding: 5px 20px;
+}
+
+#formulario-email input {
+    position: relative;
+    left: 8px;
+}
+
+#formulario-texto textarea {
+    margin-top: 10px;
+    width: 420px;
+    outline: none;
+    resize: none;
+}
+
+#formulario-check label{
+    display: inline-block;
+}
