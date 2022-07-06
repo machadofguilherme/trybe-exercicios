@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 250px;
+            margin: auto;
+        }
+
+        article {
+            display: flex;
+            justify-content: space-around;
+            width: 300px;
+            margin: 5px;
+        }
+
+        #check {
+            display: block;
+            text-align: center;
+        }
+
+        button {
+            width: 100%;
+            margin: 10px;
+            padding: 8px 15px;
+            border-radius: 5px;
+            border: none;
+            background-color: red;
+            color: #fff;
+        }
+    </style>
+    <title>Exercício 1</title>
+</head>
+
+<body>
+    <form action="">
+        <article>
+            <label for="email">
+                E-Mail:
+            </label>
+            <input type="email" name="" id="email" autocomplete="off" placeholder="Digite seu melhor e-mail" required
+                autofocus>
+        </article>
+        <article>
+            <label for="password">
+                Senha:
+            </label>
+            <input type="password" name="" required id="password" placeholder="Digite sua senha">
+        </article>
+
+        <article id="check">
+            <label for="checkbox">Lembre-me</label>
+            <input type="checkbox" name="" id="checkbox">
+        </article>
+
+        <button type="submit">Entrar</button>
+    </form>
+</body>
+
+</html>
