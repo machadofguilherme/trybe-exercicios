@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,16 +8,17 @@
     <title>TrybeTrip</title>
     <link rel="stylesheet" href="form.css">
 </head>
+
 <body>
     <main>
         <form action="">
             <section id="formulario-nome">
                 <label for="nome">Nome: </label>
-                <input type="text" id="nome" min="10" max="40">
+                <input type="text" id="nome" min="10" max="40" autocomplete="off">
             </section>
             <section id="formulario-email">
                 <label for="email">E-Mail: </label>
-                <input type="email" id="email" min="10" max="50">
+                <input type="email" id="email" min="10" max="50" autocomplete="off">
             </section>
             <section class="formulario-destino">
                 <input type="radio" name="destino" id="cidade">
@@ -35,7 +37,8 @@
                 <label for="montanha">Montanha</label>
             </section>
             <section id="formulario-texto">
-                <p>Por que você deveria ser a pessoa desenvolvedora a ganhar <br>o concurso <strong>TrybeTrip?</strong></p>
+                <p>Por que você deveria ser a pessoa desenvolvedora a ganhar <br>o concurso <strong>TrybeTrip?</strong>
+                </p>
                 <textarea name="texto" id="texto" cols="30" rows="10"></textarea>
             </section>
             <section id="formulario-data">
@@ -43,15 +46,22 @@
                 <input type="date" name="data" id="data">
             </section>
             <section id="formulario-check">
+                <label for="promocao">
                     Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?
-                    <label for="promocao"><input type="checkbox" name="check" id="promocao">
+                    <input type="checkbox" name="check" id="promocao">
                 </label>
                 <label for="concordo">
                     Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.
                     <input type="checkbox" name="check" id="concordo">
                 </label>
             </section>
+            <section id="formulario-botao">
+                <button id="botao-enviar">Enviar</button>
+                <button id="botao-apagar">Apagar</button>
+            </section>
         </form>
     </main>
+    <script src="form.js"></script>
 </body>
+
 </html>
