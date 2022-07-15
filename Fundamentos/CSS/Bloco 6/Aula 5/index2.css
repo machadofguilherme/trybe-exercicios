@@ -1,0 +1,129 @@
+/*
+ * @see http://www.paulirish.com/2012/box-sizing-border-box-ftw/
+ * apply a natural box layout model to all elements, but allowing components to change
+ */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+article {
+  width: 100%;
+  max-width: 400px;
+  text-align: justify;
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+  margin-top: 20px;
+}
+
+figure {
+  margin: 0;
+}
+
+figcaption {
+  font-size: 0.8em;
+  text-align: center;
+}
+
+@media (min-width: 430px) and (max-width: 1300px) {
+  h1 {
+    font-size: 2.5em;
+  }
+
+  article {
+    margin: 0 auto;
+    font-size: 1.2em;
+  }
+
+  h2 {
+    font-size: 1.7em;
+  }
+
+  section {
+    display: flex;
+    justify-content: center;
+    width: 500px;
+  }
+
+  .coluna1,
+  .coluna2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  img {
+    width: 80%;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 50px;
+  }
+
+  figcaption {
+    margin-right: 50px;
+  }
+}
+
+@media (min-width: 1300px) {
+  body {
+    background-color: lightgreen;
+  }
+
+  h1 {
+    font-size: 3.5em;
+  }
+
+  h2 {
+    font-size: 2.5em;
+  }
+
+  article {
+    margin: 0 auto;
+    font-size: 1.5em;
+  }
+
+  section {
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+  }
+
+  .coluna1,
+  .coluna2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  img {
+    width: 15em;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 50px;
+  }
+
+  figcaption {
+    margin-right: 5px;
+    font-size: 18px;
+  }
+}
