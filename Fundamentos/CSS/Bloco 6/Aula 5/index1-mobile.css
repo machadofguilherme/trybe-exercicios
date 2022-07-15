@@ -1,0 +1,25 @@
+@media (min-width: 500px) {
+  .card:nth-child(1),
+  .card:nth-child(3) {
+    display: block;
+  }
+}
+
+@media (min-width: 500px) {
+  .trick {
+    display: block;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 1000px) {
+  .card:nth-child(2),
+  .card:nth-child(3) {
+    display: block;
+  }
+}
+
+@media (min-width: 650px) and (max-width: 950px) {
+  .card:nth-child(3) {
+    display: none;
+  }
+}
