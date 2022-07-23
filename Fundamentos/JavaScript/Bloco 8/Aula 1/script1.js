@@ -1,19 +1,12 @@
-let wakeUp;
-let takingCoffe;
-let sleep;
+let wakeUp = 'Acordando!!';
+let takingCoffe = 'Bora tomar café!!';
+let sleep = 'Partiu dormir!!';
 
 const callback = (message) => console.log(message);
 const doingThings = (message, callback) => {
-    if (wakeUp) {
-      message = 'Acordar!!';
-      callback(message); 
-    } else if (takingCoffe) {
-      message = 'Tomar café!!';
-      callback(message);
-    } else if (sleep) {
-      message = 'Dormir!!';
-      callback(message); 
-    }
+    if (wakeUp === message)      { callback(message); }
+    if (takingCoffe === message) { callback(message); }
+    if (sleep === message)       { callback(message); }
 };
 
-doingThings(sleep, callback);
+doingThings(takingCoffe, callback);
