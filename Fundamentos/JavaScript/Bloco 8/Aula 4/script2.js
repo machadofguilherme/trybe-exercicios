@@ -74,13 +74,12 @@ const estudantes = [
 ];
 
 const dadosEstudante = () => {
-  return estudantes.map((e) => {
-    const objeto = {};
-    objeto.nome = e.nome;
+  return estudantes.map((e) => { 
+    const objeto = {}; objeto.nome = e.nome;
     objeto.materia = e
       .materias.reduce((total, atual) => atual.nota > total ? atual.nota : total, 0);
     return objeto;
-  })
+  });
 }
 
 console.log(dadosEstudante());
