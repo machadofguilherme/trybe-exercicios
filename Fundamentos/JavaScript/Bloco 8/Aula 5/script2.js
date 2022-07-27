@@ -19,4 +19,6 @@ const trappistEnterprise = {
 
 const { person: { nationality } } = trappistEnterprise;
 
-console.log(nationality);
+//console.log(nationality);
+
+module.exports = { trappistEnterprise, jobInfos, user };
